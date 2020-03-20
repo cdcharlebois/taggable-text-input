@@ -6,8 +6,8 @@
   "copyright": "Mendix 2019",
   "author": "Conner",
   "config": {
-    "widgetPath": "./dist/MxTestProject/widgets",
-    "projectPath": "./dist/MxTestProject/",
+    "widgetPath": "/Users/conner/mendix/p/MxTwitter-main/widgets",
+    "projectPath": "/Users/conner/mendix/p/MxTwitter-main",
     "mendixHost": "http://localhost:8080",
     "developmentPort": "3000"
   },
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "big.js": "^5.2.2",
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "react-input-trigger": "^1.1.2"
   }
 }

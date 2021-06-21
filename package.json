@@ -28,8 +28,6 @@
   "dependencies": {
     "big.js": "^5.2.2",
     "classnames": "^2.2.6",
-    "react-input-trigger": "^1.1.2",
-    "react-mentions": "^4.3.0",
-    "react-tag-autocomplete": "^6.1.0"
+    "react-mentions": "^4.3.0"
   }
 }

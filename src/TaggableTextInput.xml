@@ -8,9 +8,38 @@
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
+            <property key="attribute" type="attribute" required="true">
+              <caption>Attribute</caption>
+              <description>The attribute to hold the text value</description>
+              <attributeTypes>
+                <attributeType name="String" />
+              </attributeTypes>
+            </property>
+            <property key="tempIdAttr" type="attribute" required="true">
+              <caption>Temp Id Attr</caption>
+              <description>Used to hold the ID of a tag when it's being added (used in the action below)</description>
+              <attributeTypes>
+                <attributeType name="String" />
+              </attributeTypes>
+            </property>
+            <property key="onAddAction" type="action">
+              <caption>On Add</caption>
+              <description>triggered when a new tag is added</description>
+            </property>
+            <property key="onRemoveAction" type="action">
+              <caption>On Remove</caption>
+              <description>triggered when a tag is removed</description>
+            </property>
+            <property key="datasource" type="datasource" required="true" isList="true">
+              <caption>Data Source</caption>
+              <description>Values that can be tagged</description>
+            </property>
+            <property key="displayAttr" type="attribute" required="true" dataSource="datasource" >
+              <caption>Display Attribute</caption>
+              <description></description>
+              <attributeTypes>
+                <attributeType name="String" />
+              </attributeTypes>
             </property>
         </propertyGroup>
     </properties>

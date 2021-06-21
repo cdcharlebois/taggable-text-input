@@ -6,28 +6,30 @@
   "copyright": "Mendix 2019",
   "author": "Conner",
   "config": {
-    "widgetPath": "/Users/conner/mendix/p/MxTwitter-main/widgets",
-    "projectPath": "/Users/conner/mendix/p/MxTwitter-main",
+    "widgetPath": "/Users/conner.charlebois/Documents/Mendix/Projects/TaggableTest/widgets",
+    "projectPath": "/Users/conner.charlebois/Documents/Mendix/Projects/TaggableTest",
     "mendixHost": "http://localhost:8080",
     "developmentPort": "3000"
   },
   "packagePath": "mendix",
   "scripts": {
-    "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
-    "dev": "pluggable-widgets-tools start:js",
-    "build": "pluggable-widgets-tools build:js",
+    "start": "concurrently \"pluggable-widgets-tools start:web --open\" \"npm:dev\"",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
     "lint": "pluggable-widgets-tools lint",
     "lint:fix": "pluggable-widgets-tools lint:fix",
     "prerelease": "npm run lint",
-    "release": "pluggable-widgets-tools release:js"
+    "release": "pluggable-widgets-tools release:web"
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "~8.6.0"
+    "@mendix/pluggable-widgets-tools": "^9.2.1"
   },
   "dependencies": {
     "big.js": "^5.2.2",
     "classnames": "^2.2.6",
-    "react-input-trigger": "^1.1.2"
+    "react-input-trigger": "^1.1.2",
+    "react-mentions": "^4.3.0",
+    "react-tag-autocomplete": "^6.1.0"
   }
 }
